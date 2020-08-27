@@ -134,7 +134,6 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 	public List<Department> findAll() {
 		PreparedStatement st = null;
 		ResultSet rs = null;
-		
 		try {
 			st = conn.prepareStatement(
 					"SELECT * FROM department ORDER BY Name");
