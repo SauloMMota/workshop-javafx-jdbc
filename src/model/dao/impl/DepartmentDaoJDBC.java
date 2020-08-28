@@ -141,7 +141,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 			
 			List<Department> list = new ArrayList<>();
 			
-			while(!rs.next()) {
+			while(rs.next()) {
 				Department obj = new Department();
 				obj.setId(rs.getInt("Id"));
 				obj.setName(rs.getString("Name"));
